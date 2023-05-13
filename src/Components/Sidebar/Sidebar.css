@@ -1,0 +1,66 @@
+.Sidebar {
+    resize: horizontal;
+    overflow: auto;
+    min-width: 20%; /* Adjust as needed */
+    max-width: 80%; /* Adjust as needed */
+    width: 30%;
+    height: 100vh;
+    background-color: #192036;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Sidebar-header {
+padding: 1em;
+color: #F9F9FB;
+}
+
+.Sidebar-content {
+overflow-y: auto;
+padding-left: 10px;
+}
+
+.sidebar h1 {
+font-size: 1.5rem;
+margin: 1rem;
+}
+
+.sidebar ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.sidebar li {
+margin: 0.5rem 1rem;
+cursor: pointer;
+}
+
+.sidebar p {
+margin: 0.5rem 1rem;
+white-space: nowrap; /* Prevent line breaks */
+overflow: hidden;
+text-overflow: ellipsis; /* Add ellipsis for overflow */
+cursor: pointer;
+}
+
+.sidebar li.active {
+font-weight: normal;
+}
+
+.hr {
+position: relative;
+padding-left: 10px;
+padding-right: 10px;
+border: none; /* Remove the default border */
+height: 1px; /* Set the height of the line */
+background-color: #353f5c; /* Change the background color of the line */
+}
+
+.Sidebar.collapsed {
+    width: 5%;  /* Adjust as needed */
+}
+
+.Sidebar.collapsed .Sidebar-header h1,
+.Sidebar.collapsed .Sidebar-content {
+display: none; /* Hide content when collapsed */
+}
